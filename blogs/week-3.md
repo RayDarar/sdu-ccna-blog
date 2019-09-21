@@ -33,4 +33,16 @@ lifes and by "our" lifes I mean life of
 every people around the world. The 
 Internet is about connecting people, 
 collaboration with different groups of 
-nations and etc.
+nations and etc. <br>
+Ninth chapter was all about the Application 
+layer of TCP/IP model. Different protocols 
+for different purposes. For example:
+- HTTP also known as Hyper Text Transfer Protocol
+- HTTPS also known as Hyper Text Transfer Protocol Secure
+- FTP also known as File Transfer Protocol
+- DNS also known as Domain Name System
+Overall the first week was quite interesting.
+First experience with Cisco Packet Tracer 
+which is an essential tool for every 
+engineer that want to work with networks 
+and administrate them.
