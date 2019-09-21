@@ -71,9 +71,9 @@ Responsibilities:
 Ip is concerned only with the structure, 
 addressing and routing of Packets.
 TCP is reliable. Three operations of it:
-1) Numbering and tracking data segments transmitted to a specific host from specific app
-2) Acknowledging received data
-3) Retransmiting any unacknowledged data after a certain period of time.
+1. Numbering and tracking data segments transmitted to a specific host from specific app
+2. Acknowledging received data
+3. Retransmiting any unacknowledged data after a certain period of time.
 
 UDP has a smaller header,therefore it is faster than TCP
 
@@ -97,9 +97,9 @@ Transport layer protocol are managing multiple conversations between apps by usi
 These unique identifiera are the port numbers.
 
 <hr>
-1) Well-known ports (0-1023)
-1) Registered ports (1024-49151)
-1) Dynamic or private ports (49152-65335)
+1. Well-known ports (0-1023)
+1. Registered ports (1024-49151)
+1. Dynamic or private ports (49152-65335)
 
 Netstat command <br>
 -n - display ip addresses and port numbers.
