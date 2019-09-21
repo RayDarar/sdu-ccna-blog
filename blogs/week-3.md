@@ -41,6 +41,7 @@ for different purposes. For example:
 - HTTPS also known as Hyper Text Transfer Protocol Secure
 - FTP also known as File Transfer Protocol
 - DNS also known as Domain Name System
+
 Overall the first week was quite interesting.
 First experience with Cisco Packet Tracer 
 which is an essential tool for every 
