@@ -5,3 +5,4 @@ Computer Networks are an essential part of any engineer in the world. I am happy
 
 ## Structure
 - [Week 3 summary](blogs/week-3.md)
+- [Week 4 summary](blogs/week-4.md)
