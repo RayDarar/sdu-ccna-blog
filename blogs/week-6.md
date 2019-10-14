@@ -44,7 +44,18 @@ For example:
 
 That's all notes I have got about the network media properties.
 
-<!-- continue chapter 4 -->
+Next I learned about **data link layer** a bit. Simply, it's responsible for preparing network data for the physical network. It's responsibilities are:
+
+1. Allowing the upper layers to access the media
+1. Accepting packets and packaging them into frames
+1. Controlling how data is placed and received on media
+1. Exchanging frames between nodes over a physical network media
+1. Receiving and directing packets to an upper layer protocol
+1. Performing error detection
+
+DL layer is divided into two sub layers: LLC (which works with upper layers), MAC (which works with media)
+
+Additional information about *media access control* or simply MAC. First of all what is network topology? It's the arrangement or relationship of the network devices. _Physical topology_ refers to the physical connections while _logical topology_ to the way network transfers frames from one node to the next.
 
 ## Lab work
 On lab we passed 4th task from previous lab. That was actually a challenge because of misunderstanding of some little beginning steps. However, I managed to pass. After such task we had a simple quiz for IP calculations. Overall, it was quite easy except for time limitations and my poor math calculation skills.
