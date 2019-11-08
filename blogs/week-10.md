@@ -80,3 +80,33 @@ Routes are always discussed in terms of:
 When we are speaking of route types in terms of IPv6, remember, there is no other types other than ultimate route when we are using IPv6.
 
 Overall, that is all I have got for this chapter.
+
+## Chapter 4 - Switched Networks
+In this chapter we are going to discuss the modern requirements and some of the current network designs modules.
+
+To mention: nowadays world uses **converged networks** design, which simply means that any type of host device and network traffic uses one network (one physical network). That one gives us a flexibility when we are building any kind of network.
+
+What is Cisco borderless switched network? Well it is said, that it is modern network design template that provides us flexibility and accessability. Main principles of such are:
+- Hierarchical - network must be divided into different tiers
+- Modularity - Allows seamless network to be integrated at on-demand basis
+- Resiliency - Makes network be always on
+- Flexibility - Intelligent traffic load by using and sharing all the network resources
+
+There are **Three main layers** in any network architecture:
+1. Access layer - from which end-users are connecting to the network
+1. Distribution layer - provides us with these useful functions:
+    - Aggregating large-scale wiring closet networks
+    - Aggregating Layer 2 broadcast domains and Layer 3 routing boundaries
+    - Providing intelligent switching, routing, and network access policy functions to access the rest of the network
+    - Providing high availability through redundant distribution layer switches to the end-user and equal cost paths to the core
+    - Providing differentiated services to various classes of service applications at the edge of the network
+1. Core layer - is a backbone of the network, connecting the other blocks and campuses.
+
+What is a **form factor?** It is a defines the physical properties of something in the context of designing system or anything else. Some switch types:
+- Fixed configuration switches - do not support configurations that are beyond the default/originally features that came with the switch.
+- Modular configuration switches - more flexible because of the line card that can be expanded with any kind of port.
+- Stackable configuration switches - switches that can be interconnected
+
+Next topics was already discussed in the previous book. I already know about different switching methods. 
+
+Overall, that is all I have got for this chapter (because it's literally small)
