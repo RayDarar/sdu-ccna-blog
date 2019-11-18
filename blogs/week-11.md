@@ -41,7 +41,7 @@ To associate the created vlan with the actual interface, enter the interface con
 
 **Default gateway** can be configured with the `ip default-gateway ip-address` command.
 
-I already know about Full-duplex and Half-duplex modes, so I will skip this. However there's a new commands that needs to be written. We can specify the duplex mode for interface using `duplex {full | half}` command. Also `speed {speed}` command which sets the speed for this interface.
+I already know about Full-duplex and Half-duplex modes, so I will skip this. However there's a new commands that needs to be written. We can specify the duplex mode for interface using `duplex {full | half}` command. Also `speed [speed]` command which sets the speed for this interface.
 
 From the book RS1 we heard of auto-MDIX, so here's the command how to configure it on the switch `mdix auto`.
 
@@ -65,6 +65,18 @@ Next few things to do to configure **SSH**:
 - `login local` command on vty lines
 
 Finally I learned really useful command `interface range type module/first-number last-number`
+
+Port Security types:
+- **Static secure** - activated by `switchport port-security mac-address [mac-address]`, stored in the running-configurations
+- **Dynamic secure** - dynamically learned and stored only in the address table
+- **Sticky secure** - can be dynamically learned or manually configured (activated by `switchport port-security mac-address sticky`). To manually add sticky mac-address use `switchport port-security mac-address sticky [mac-address]` command.
+
+We configure **violation mode** on a switch to specify the action when violations occur:
+- Protect - drop the packet with unknown source addresses. No notifications is being received
+- Restrict - same as protect but notifications are received
+- Shutdown (default) - if violation occurs, the interface will be immediately error-disabled
+
+You can configure these violation modes with command: `switchport port-security violation {protect | restrict | shutdown}`;
 
 Also some useful commands to configure Port Security:
 - `switchport mode access` - set the interface mode
