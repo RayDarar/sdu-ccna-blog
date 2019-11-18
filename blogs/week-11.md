@@ -41,7 +41,7 @@ To associate the created vlan with the actual interface, enter the interface con
 
 **Default gateway** can be configured with the `ip default-gateway ip-address` command.
 
-I already know about Full-duplex and Half-duplex modes, so I will skip this. However there's a new commands that needs to be written. We can specify the duplex mode for interface using `duplex {full | half}` command. Also `speed speed` command which sets the speed for this interface.
+I already know about Full-duplex and Half-duplex modes, so I will skip this. However there's a new commands that needs to be written. We can specify the duplex mode for interface using `duplex {full | half}` command. Also `speed {speed}` command which sets the speed for this interface.
 
 From the book RS1 we heard of auto-MDIX, so here's the command how to configure it on the switch `mdix auto`.
 
@@ -55,16 +55,16 @@ From the book RS1 we heard of auto-MDIX, so here's the command how to configure 
 - `show ip [interface-id]` - display IP information about interface
 - `show mac address-table` - display the MAC address table
 
-Next few things to do is configuring **SSH**.
-- To verify that SSH is supported by switch
+Next few things to do to configure **SSH**:
+- To verify that SSH is supported by switch `show ip ssh`
 - Configure the `ip domain-name [domain-name]`
 - Configure SSH version 2 using `ip ssh version 2`
 - Generate RSA key pairs using `crypto key generate rsa` (to delete use `crypto key zeroize rsa`)
 - Create username and password using `username [username] secret [password]`
-- Open vty lines and use `transport input ssh`
-- `login local` command
+- Open vty lines (0-15) and use `transport input ssh`
+- `login local` command on vty lines
 
-Finally I learned really useful command `interface range type module/first-number – last-number`
+Finally I learned really useful command `interface range type module/first-number last-number`
 
 Also some useful commands to configure Port Security:
 - `switchport mode access` - set the interface mode

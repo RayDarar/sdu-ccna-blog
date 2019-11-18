@@ -102,7 +102,7 @@ There are **Three main layers** in any network architecture:
     - Providing differentiated services to various classes of service applications at the edge of the network
 1. Core layer - is a backbone of the network, connecting the other blocks and campuses.
 
-What is a **form factor?** It is a defines the physical properties of something in the context of designing system or anything else. Some switch types:
+What is a **form factor?** It defines the physical properties of something in the context of designing system or anything else. Some switch types:
 - Fixed configuration switches - do not support configurations that are beyond the default/originally features that came with the switch.
 - Modular configuration switches - more flexible because of the line card that can be expanded with any kind of port.
 - Stackable configuration switches - switches that can be interconnected

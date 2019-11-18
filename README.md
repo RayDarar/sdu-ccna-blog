@@ -10,4 +10,5 @@ Computer Networks are an essential part of any engineer in the world. I am happy
 - [Week 8 summary](blogs/week-8.md)
 - [Week 9 summary](blogs/week-9.md)
 - [Week 10 summary](blogs/week-10.md)
-- [Week 5 summary](blogs/week-11.md)
+- [Week 11 summary](blogs/week-11.md)
+- [Week 12 summary](blogs/week-12.md)
