@@ -79,7 +79,7 @@ We configure **violation mode** on a switch to specify the action when violation
 You can configure these violation modes with command: `switchport port-security violation {protect | restrict | shutdown}`;
 
 Also some useful commands to configure Port Security:
-- `switchport mode access` - set the interface mode
+- `switchport mode access` - set the interface mode to be configured
 - `switchport port-security` - enable port security on interface
 - `switchport port-security maximum [number]` - set the maximum number of secure addresses allowed
 - `switchport port-security mac-address sticky` - enable sticky learning
