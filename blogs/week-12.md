@@ -45,7 +45,7 @@ Finally we are about to create VLAN. Some first useful commands:
 - `mls qos trust [cos | device cisco-phone | dscp | ip-precedence]` - in interface config mode, is used to set the trusted state of an interface, and to indicate which fields of the packet are used to classify traffic
 - `no switchport access vlan` - in interface config mode, removes any assigned vlan to the interface
 - `no vlan [vlan-id]` - removing vlan with id number
-- `delete vlan.dat` - delete all the created vlan
+- `delete vlan.dat` - delete all the created vlans
 
 Some variations of **show** command in combination with vlan:
 - `show vlan`
