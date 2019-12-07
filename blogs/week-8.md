@@ -5,6 +5,7 @@ This week will be a conclusion of first term period. If I was trying to conclude
 So, overall I want to say first-term period was pretty much about the essentials of networking and actually gives to students information to change their point of view on how the Internet works. We were building local networks from scratch and having a different tasks to do either theoretical or with physical equipment. I was actually having fun playing kahoot and implementing different things.
 
 For these period we have passed these topics:
+
 - Application layer
 - Transport layer
 - Configuring Cisco OSI
@@ -48,5 +49,6 @@ Before this topic I used to have a different misconceptions about the cables, te
 
 This protocol was the most hard through all the chapters, because I haven't prepared pretty well. But found a way to understand! Packet Tracer's simulation mode that visualized to me the ARP process and hell yeah, I clearly understood how it works.
 
-***
+---
+
 This was fun, but now I'm ready for the new material. Labs passed. Midterm was so easy, that I left the auditory after around 10 minutes. This first half of this course helped me so much. Thank you.

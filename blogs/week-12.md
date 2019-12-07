@@ -11,6 +11,7 @@ From introduction part I learned that VLAN is used for only one purpose: **segme
 First thing to mention is that VLANs areas are based on **logical connections** instead of **physical**. Separation depends on factors such as: function, project team, application **without thinking** of physical connections. VLAN connections are as the same as if devices **sharing same VLAN are connected together** by cables.
 
 After receiving the knowledge of what it is, let's take all the **benefits** into account and try to breakdown all of them:
+
 - Security
 - Cost reduction
 - Better performance
@@ -19,6 +20,7 @@ After receiving the knowledge of what it is, let's take all the **benefits** int
 - Simpler project and application management
 
 Now let's consider a different **types** of VLAN:
+
 - **Data VLAN** - used to separate the networks into groups of users or devices
 - **Default VLAN** - using `show vlan brief` we can display all the vlans and assigned ports. By default all the switch's ports are assigned to vlan 1 which has name of default. Default vlans has the same features as the other types, however it cannot be renamed or deleted
 - **Native VLAN** - are configured on unused VLAN port as trunk port
@@ -27,16 +29,19 @@ Now let's consider a different **types** of VLAN:
 After basic introduction into the VLAN, here I have the packet tracer task in which we are exploring broadcast areas. The main thing is, that in multi-switched network VLAN could not work without VLAN trunks.
 
 **Tagging** Ethernet frames for VLAN identification is main thing in VLAN trunking. VLAN tag field details:
+
 - Type
 - User Priority
 - Canonical Format Identifier (CFI)
 - VLAN ID
 
 Now we can try to implement VLAN. A few words about VLAN ranges:
+
 - Normal range VLAN - used in small and medium size businesses and enterprises identified by VLAN ID from 1 - 1005. IDs 1002 through 1005 are reserved. All these IDs are automatically created and cannot be removed. All the information is stored in VLAN database located in the flash memory vlan.dat. VLAN trunking protocol which helps manage VLAN configuration between switches.
 - Extended range VLAN - range is identified between 1006 and 4094. Configurations are not written in vlan.dat file.
 
 Finally we are about to create VLAN. Some first useful commands:
+
 - `vlan [vlan-id]` - create a vlan with id number (we can create a multiple vlans using coma-separation)
 - `name [vlan-name]` - in vlan config mode, setting unique name for this vlan
 - `switchport mode access` - in interface config mode, set the port to access mode
@@ -48,6 +53,7 @@ Finally we are about to create VLAN. Some first useful commands:
 - `delete vlan.dat` - delete all the created vlans
 
 Some variations of **show** command in combination with vlan:
+
 - `show vlan`
 - `show vlan brief`
 - `show vlan id [vlan-id]`
@@ -55,6 +61,7 @@ Some variations of **show** command in combination with vlan:
 - `show vlan summary`
 
 Let's configure trunk between the switches
+
 - `switchport mode trunk` - in interface config mode, forces the link to be a trunk link.
 - `switchport trunk native vlan [vlan-id]` - in interface config mode, specify native VLAN for untagged frames
 - `switchport trunk allowed vlan [vlan-id]` - in interface config mode, specify the list of VLANs to be allowed on the trunk link
@@ -81,6 +88,7 @@ Finally, after a bit of suffering (actually it was about 5 minutes, so it's ok) 
 To enable inter vlan routing using new method, you should start by your switches, by that I mean to enable trunk mode on the ports connecting to the router.
 
 Now we can focus on routers. To create a sub-interface follow, these commands:
+
 - `interface [interface-id].[sub-interface-id]` - to create the sub-interface
 - `encapsulation dot1q [vlan-id]` - assigning sub-interface to vlan
 - `ip address [ip-address] [subnet-mask]` - assigning ip address to the sub-interface

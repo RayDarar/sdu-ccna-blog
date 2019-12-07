@@ -11,6 +11,7 @@ So, for now (by now I mean monday) I've only got the fourth chapter to read and 
 ![well, it's image](../img/week-6-1.png)
 
 ## Fourth chapter
+
 First, of all there are literally six sections to examine. Well, I have only one option....
 
 <br>
@@ -20,11 +21,13 @@ From **introduction** part I got the point of this chapter, to show us the Physi
 <br>
 
 **Physical layer** is responsible for transmitting via network media. There is a different types of media:
+
 1. Coper cable - electrical pulses
 1. Fiber-optic - patterns of light
 1. Wireless - patterns of microwaves
 
 Main functions of physical layer:
+
 1. Use a physical components of network
 1. Encoding the signal into the flow of bits
 1. Signaling the data via a network media
@@ -55,9 +58,10 @@ Next I learned about **data link layer** a bit. Simply, it's responsible for pre
 
 DL layer is divided into two sub layers: LLC (which works with upper layers), MAC (which works with media)
 
-Additional information about *media access control* or simply MAC. First of all what is network topology? It's the arrangement or relationship of the network devices. _Physical topology_ refers to the physical connections while _logical topology_ to the way network transfers frames from one node to the next.
+Additional information about _media access control_ or simply MAC. First of all what is network topology? It's the arrangement or relationship of the network devices. _Physical topology_ refers to the physical connections while _logical topology_ to the way network transfers frames from one node to the next.
 
 ## Lab work
+
 On lab we passed 4th task from previous lab. That was actually a challenge because of misunderstanding of some little beginning steps. However, I managed to pass. After such task we had a simple quiz for IP calculations. Overall, it was quite easy except for time limitations and my poor math calculation skills.
 
 ## Summary
