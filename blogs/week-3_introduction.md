@@ -77,4 +77,4 @@ These unique identifiers are the port numbers.
 
 Overall, that is everything that I want to write.
 
-<img src="../img/week-3-1.jpg">
+![alt](../img/ip-addressing.jpg)
